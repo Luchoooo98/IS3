@@ -1,0 +1,14 @@
+una vez que tenes creado el model con MyContext bien armado:
+
+Add-Migration <nombre> 
+Ej: Add-Migration Initial
+
+Despues: 
+Update-Database para crear/actualizar la bd
+
+para borrar una migration:
+
+update-database 0 ==> Revierte la migracion para permitirte eliminarla
+remove-migration ==> te borra la ultima migracion.
+
+Despues tiras un Add-Migration de nuevo y el Update-Database
